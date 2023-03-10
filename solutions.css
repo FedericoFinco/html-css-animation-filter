@@ -136,3 +136,39 @@
 .ex-12-bottom-white{
     background-color: red;
 } */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move4;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes move3{
+    0% {left: 10%; top:-10px}
+    20% {left: 77%; top: -10px;}
+    40% {left: 77%; top: 54px;}
+    60% {left: -10px; top: 54px;}
+    80% {left: -10px; top: -10px;}
+    100% {left: 10%; top: -10px;}
+}
+
+
+
+@keyframes move4{
+    0% {right:20%;}
+    20% {right: 77%; bottom: -10px;}
+    40% {right: 77%; bottom: 54px;}
+    60% {right: -10px; bottom: 54px;}
+    80% {right: -10px; bottom: -10px;}
+    100% {right: 10%; bottom: -10px}
+}
+
+/* .ex-13-bottom-white, .ex-13-top-white{
+    background-color: red;
+} */
