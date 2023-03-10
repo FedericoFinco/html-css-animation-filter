@@ -105,3 +105,34 @@
 }
 
 /* il vostro nell'esercizio corretto non fa 3/4 btw */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: move1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes move1{
+    0%{left: 10%;}
+    50%{left: 69%;}
+    100%{left: 10%;}
+}
+
+@keyframes move2{
+    0%{right: 10%;}
+    50%{right: 69%;}
+    100%{right: 10%;}
+}
+
+/* .ex-12-top-white{
+    background-color: red;
+}
+.ex-12-bottom-white{
+    background-color: red;
+} */
